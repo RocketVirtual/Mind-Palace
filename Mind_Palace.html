@@ -7,11 +7,11 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="gray-translucent" />
-    <script src="https://rocketvirtual.com/webvr/aframe-master/dist/aframe-v0.7.1.js"></script>
-    <script src="https://rocketvirtual.com/webvr/aframe-super-hands-component-master/dist/super-hands.min.js"></script>
+    <script src="https://rocketvirtual.com/webvr/aframe-master_old/dist/aframe-v0.7.1.js"></script>
+    <script src="https://rocketvirtual.com/webvr/aframe-super-hands-component-master_old/dist/super-hands.min.js"></script>
     <script src="https://rocketvirtual.com/webvr/aframe-rounded-master/dist/aframe-rounded-component.min.js"></script>
-    <script src="https://rocketvirtual.com/webvr/aframe-extras-master/dist/aframe-extras.min.js"></script>
-    <script src="https://rocketvirtual.com/webvr/aframe-environment-component-master/dist/aframe-environment-component.min.js"></script>
+    <script src="https://rocketvirtual.com/webvr/aframe-extras-master_old2/dist/aframe-extras.min.js"></script>
+    <script src="https://rocketvirtual.com/webvr/aframe-environment-component-master_old/dist/aframe-environment-component.min.js"></script>
     <script src="https://rocketvirtual.com/webvr/aframe-event-set-component-master/dist/aframe-event-set-component.min.js"></script>
 
     <style type="text/css">
@@ -37,11 +37,7 @@
     <link rel="stylesheet" type="text/css" href="https://rocketvirtual.com/webvr/aframe-super-hands-component-master/examples/assets/examples.css">
 
     <script type="text/javascript">
-
-
-
-    var Speech = 'true';
-
+    var Speech = 'false';
      function setSpeech() {
     	if (Speech === true) {
           Speech = false;
@@ -51,12 +47,8 @@
           document.getElementById('speech-control').setAttribute('src', '#volume-normal');
     	}
      }
-
-
       function setScenePlace1() {
-
         var msg1 = new SpeechSynthesisUtterance('Location Marshalls Beach, San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'true')
         document.getElementById('scenePlace2').setAttribute('visible', 'false')
         document.getElementById('scenePlace4').setAttribute('visible', 'false')
@@ -65,7 +57,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'false')
         document.getElementById('scenePlace8').setAttribute('visible', 'false')
         document.getElementById('scenePlace9').setAttribute('visible', 'false')
-
         document.getElementById('sp_place1').setAttribute('color', 'gray')
         document.getElementById('sp_place2').setAttribute('color', 'white')
         document.getElementById('sp_place4').setAttribute('color', 'white')
@@ -78,15 +69,10 @@
         if (Speech === true) {
           	window.speechSynthesis.speak(msg1);
     	}
-
-
       }
-
       function setScenePlace2() {
         document.getElementById('VRdesk').setAttribute('visible', 'false')
-
         var msg2 = new SpeechSynthesisUtterance('Location Rincon Park, Embarcadero, San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'false')
         document.getElementById('scenePlace2').setAttribute('visible', 'true')
         document.getElementById('scenePlace4').setAttribute('visible', 'false')
@@ -95,7 +81,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'false')
         document.getElementById('scenePlace8').setAttribute('visible', 'false')
         document.getElementById('scenePlace9').setAttribute('visible', 'false')
-
         document.getElementById('sp_place1').setAttribute('color', 'white')
         document.getElementById('sp_place2').setAttribute('color', 'gray')
         document.getElementById('sp_place4').setAttribute('color', 'white')
@@ -110,12 +95,9 @@
     	}
         
       }
-
       function setScenePlace4() {
         document.getElementById('VRdesk').setAttribute('visible', 'false')
-
         var msg4 = new SpeechSynthesisUtterance('Location Golden Gate Park consisting of 1,017 acres of public grounds. San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'false')
         document.getElementById('scenePlace2').setAttribute('visible', 'false')
         document.getElementById('scenePlace4').setAttribute('visible', 'true')
@@ -124,7 +106,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'false')
         document.getElementById('scenePlace8').setAttribute('visible', 'false')
         document.getElementById('scenePlace9').setAttribute('visible', 'false')
-
         document.getElementById('sp_place1').setAttribute('color', 'white')
         document.getElementById('sp_place2').setAttribute('color', 'white')
         document.getElementById('sp_place4').setAttribute('color', 'gray')
@@ -138,12 +119,9 @@
           	window.speechSynthesis.speak(msg4);
     	}
       }
-
       function setScenePlace5() {
         document.getElementById('VRdesk').setAttribute('visible', 'false')
-
         var msg5 = new SpeechSynthesisUtterance('Location Golden Gate Parks Conservatory of Flowers, A Victorian-era glass greenhouse has more than 2,000 species of plants & flowers. San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'false')
         document.getElementById('scenePlace2').setAttribute('visible', 'false')
         document.getElementById('scenePlace4').setAttribute('visible', 'false')
@@ -152,7 +130,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'false')
         document.getElementById('scenePlace8').setAttribute('visible', 'false')
         document.getElementById('scenePlace9').setAttribute('visible', 'false')
-
         document.getElementById('sp_place1').setAttribute('color', 'white')
         document.getElementById('sp_place2').setAttribute('color', 'white')
         document.getElementById('sp_place4').setAttribute('color', 'white')
@@ -166,12 +143,9 @@
           	window.speechSynthesis.speak(msg5);
     	}
       }
-
       function setScenePlace6() {
         document.getElementById('VRdesk').setAttribute('visible', 'false')
-
         var msg6 = new SpeechSynthesisUtterance('Location Golden Gate Park Fountain between California Academy of Sciences and De Young Museum, San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'false')
         document.getElementById('scenePlace2').setAttribute('visible', 'false')
         document.getElementById('scenePlace4').setAttribute('visible', 'false')
@@ -180,7 +154,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'false')
         document.getElementById('scenePlace8').setAttribute('visible', 'false')
         document.getElementById('scenePlace9').setAttribute('visible', 'false')
-
         document.getElementById('sp_place1').setAttribute('color', 'white')
         document.getElementById('sp_place2').setAttribute('color', 'white')
         document.getElementById('sp_place4').setAttribute('color', 'white')
@@ -193,14 +166,10 @@
         if (Speech === true) {
           	window.speechSynthesis.speak(msg6);
     	}
-
       }
-
       function setScenePlace7() {
         document.getElementById('VRdesk').setAttribute('visible', 'false')
-
         var msg7 = new SpeechSynthesisUtterance('Location Marshalls Beach, a rocky outcropping with spectacular view of Golden Gate Bridge. San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'false')
         document.getElementById('scenePlace2').setAttribute('visible', 'false')
         document.getElementById('scenePlace4').setAttribute('visible', 'false')
@@ -209,7 +178,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'true')
         document.getElementById('scenePlace8').setAttribute('visible', 'false')
         document.getElementById('scenePlace9').setAttribute('visible', 'false')
-
         document.getElementById('sp_place1').setAttribute('color', 'white')
         document.getElementById('sp_place2').setAttribute('color', 'white')
         document.getElementById('sp_place4').setAttribute('color', 'white')
@@ -222,14 +190,10 @@
         if (Speech === true) {
           	window.speechSynthesis.speak(msg7);
     	}
-
       }
-
       function setScenePlace8() {
         document.getElementById('VRdesk').setAttribute('visible', 'false')
-
         var msg8 = new SpeechSynthesisUtterance('Location Pier 14 walk way with view of Bay bridge. Embarcadero, San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'false')
         document.getElementById('scenePlace2').setAttribute('visible', 'false')
         document.getElementById('scenePlace4').setAttribute('visible', 'false')
@@ -238,7 +202,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'false')
         document.getElementById('scenePlace8').setAttribute('visible', 'true')
         document.getElementById('scenePlace9').setAttribute('visible', 'false')
-
         document.getElementById('sp_place1').setAttribute('color', 'white')
         document.getElementById('sp_place2').setAttribute('color', 'white')
         document.getElementById('sp_place4').setAttribute('color', 'white')
@@ -251,14 +214,10 @@
         if (Speech === true) {
           	window.speechSynthesis.speak(msg8);
     	}
-
       }
-
       function setScenePlace9() {
         document.getElementById('VRdesk').setAttribute('visible', 'false')
-
         var msg9 = new SpeechSynthesisUtterance('Location Shakespeare Garden, Golden Gate Park. San Francisco, California');
-
         document.getElementById('scenePlace1').setAttribute('visible', 'false')
         document.getElementById('scenePlace2').setAttribute('visible', 'false')
         document.getElementById('scenePlace4').setAttribute('visible', 'false')
@@ -267,7 +226,6 @@
         document.getElementById('scenePlace7').setAttribute('visible', 'false')
         document.getElementById('scenePlace8').setAttribute('visible', 'false')
         document.getElementById('scenePlace9').setAttribute('visible', 'true')
-
         document.getElementById('sp_place1').setAttribute('color', 'white')
         document.getElementById('sp_place2').setAttribute('color', 'white')
         document.getElementById('sp_place4').setAttribute('color', 'white')
@@ -280,22 +238,16 @@
         if (Speech === true) {
           	window.speechSynthesis.speak(msg9);
     	}
-
       }
-
-
       function GoWebsite() {
         window.location.href="https://rocketvirtual.com";
       }
-
       function GoGame() {
         window.location.href="https://aframe.io/a-blast/";
       }
-
-
   </script>
   </head>
-  <body onload="setSpeech();setScenePlace1()" >
+  <body>
 
     <div id="video-permission">
       <button id="video-permission-button">Allow VR video</button>
@@ -374,10 +326,10 @@
           <!-- CONTROLS -->
           <a-image class="clickable" id="control-back" width="0.4" height="0.4" src="#seek-back" position="-0.8 0.6 -6" visible="false" scale="0.85 0.85 0.85"></a-image>
           <a-image class="clickable" id="control-play" width="0.4" height="0.4" src="#play" position="0 0.6 -6"></a-image>
-          <a-image class="clickable" id="control-volume" width="0.4" height="0.4" src="#volume-normal" position="0.8 0.6 -6" visible="false" scale="0.75 0.75 0.75"></a-image>
+          <a-image class="clickable" id="control-volume" width="0.4" height="0.4" src="#volume-mute" position="0.8 0.6 -6" visible="false" scale="0.75 0.75 0.75"></a-image>
 
 		  <a-image class="clickable" id="speech-text" width="0.4" height="0.4" src="#speech" position="1.539 -0.804 -4.159" scale="2.919 0.495 0.75" rotation="-50 0 0"></a-image>
-          <a-image class="clickable" id="speech-control" width="0.4" height="0.4" src="#volume-normal" position="2.323 -0.804 -4.159" scale="0.75 0.75 0.75" rotation="-50 0 0" onclick="setSpeech()"></a-image>
+          <a-image class="clickable" id="speech-control" width="0.4" height="0.4" src="#volume-mute" position="2.323 -0.804 -4.159" scale="0.75 0.75 0.75" rotation="-50 0 0" onclick="setSpeech()"></a-image>
           <!-- END CONTROLS -->
 
           <!-- PROGRESSBAR -->
@@ -431,15 +383,12 @@
 
 
     <script type="text/javascript">
-
       var AVideoPlayer = function() {
-
       // Vals
       this.duration         = 0;
       this.current_progress = 0;
       this.progressWidth    = 4;
       this.paused           = true;
-
       // Elems
       this.elProgressBar   = null;
       this.elProgressTrack = null;
@@ -450,7 +399,6 @@
       this.elControlBack   = null;
       this.elControlPlay   = null;
       this.elControlVolume = null;
-
       this._initElements = function() {
         this.elProgressBar   = document.getElementById('progress-bar');
         this.elProgressTrack = document.getElementById('progress-bar-track');
@@ -462,12 +410,10 @@
         this.elControlPlay   = document.getElementById('control-play');
         this.elControlVolume = document.getElementById('control-volume');
       }
-
       /**
       * PROGRESS
       */
       this.setProgress = function(progress) {
-
         var new_progress = this.progressWidth*progress;
         this._setProgressWidth(new_progress);
         var progress_coord = this._getProgressCoord();
@@ -488,7 +434,6 @@
       this._setProgressWidth = function(width) {
         this.elProgressFill.setAttribute("width", width);
       }
-
       /*
       * UI SETTERS
       */
@@ -496,12 +441,11 @@
         this.elProgressTrack.setAttribute("visible", isVisible);
         this.elProgressFill.setAttribute("visible", isVisible);
       }
-      this.isControlVisible = function(isVisible) {
+      this.isControlVisible = function(isVisible) {
         this.elControlBack.setAttribute("visible", isVisible);
         this.elControlVolume.setAttribute("visible", isVisible);
         this.elVideoScreen.setAttribute("visible", isVisible);
       }
-
       /*
       * EVENTS
       */
@@ -518,10 +462,8 @@
           that.setProgress(that.current_progress);
         }
       }
-
       this._addControlsEvent = function() {
         var that = this;
-
         this.elControlPlay.addEventListener('click', function () {
           that._playAudioAlert();
           if (that.elVideo.paused) {
@@ -538,7 +480,6 @@
             that.isControlVisible(false);
          }
         });
-
         this.elControlVolume.addEventListener('click', function () {
           that._playAudioAlert();
           if (that.elVideo.muted) {
@@ -549,13 +490,11 @@
             this.setAttribute('src', '#volume-mute');
           }
         });
-
         this.elControlBack.addEventListener('click', function () {
           that._playAudioAlert();
           that.elVideo.currentTime = 0;
         });
       }
-
       this._addProgressEvent = function() {
         var that = this;
         this.elProgressBar.addEventListener('click', function (e) {
@@ -570,13 +509,11 @@
           }
         });
       }
-
       this._playAudioAlert = function() {
         if (this.elAlertSound.components !== undefined && this.elAlertSound.components.sound !== undefined) {
          this.elAlertSound.components.sound.playSound();
         }
       }
-
       /**
       * MOBILE PATCH TO PLAY VIDEO
       */
@@ -585,7 +522,6 @@
           var that = this;
           let video_permission        = document.getElementById('video-permission');
          let video_permission_button = document.getElementById('video-permission-button');
-
           video_permission.style.display = 'block';
           video_permission_button.addEventListener("click", function() {
             video_permission.style.display = 'none';
@@ -594,7 +530,6 @@
           }, false);
         }
       }
-
       this.init = function() {
         this._initElements();
         //this._determinateProgressWidth();
@@ -604,12 +539,8 @@
         this._addProgressEvent();
         this._mobileFriendly();
       }
-
       this.init();
     }
-
-
-
       let scene = document.querySelector('a-scene');
       var cursor = document.querySelector('a-cursor');
       /**
@@ -632,10 +563,8 @@
       document.querySelector('#control-play').addEventListener('click', function () {
         if (videoPlayer.paused) {
           scene.lightOn()
-
         } else {
           scene.lightOff();
-
         }
       });
     </script>
